@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              sm: "640px",
+
+              md: "768px",
+
+              lg: "1024px",
+
+              xl: "1280px",
+
+              "2xl": "1536px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header
+      class="flex justify-between px-5 bg-slate-400 h-[50px] items-center"
+    >
+      <div class="text-lg font-bold">
+        <span class="text-blue-700">BLOG</span>Site
+      </div>
+      <ul class="menu flex gap-5 justify-end items-center text-white">
+        <li>HOME</li>
+        <li>ABOUT US</li>
+        <li>CONTACT US</li>
+      </ul>
+    </header>
+
+    <div class="contain flex w-[90%] sm:w-[60%] mx-auto">
+      <div class="container-body px-5 py-5">
+        <h2>Henry Akrayavi</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          perspiciatis enim at expedita eum laborum animi saepe temporibus
+          impedit laudantium dicta voluptatem neque, voluptatum reprehenderit
+          reiciendis distinctio veniam praesentium aliquam.
+        </p>
+      </div>
+      <img src="./images/file.png" alt="">
+    </div>
+  </body>
+</html>
